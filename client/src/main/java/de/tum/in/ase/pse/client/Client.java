@@ -6,7 +6,7 @@ public class Client {
     private RestTemplate restTemplate;
 
     private static final String MASTER_YODA_SERVICE_URL = "http://localhost:8080";
-    private static final String OBI_WAN_KENOBI_SERVICE_URL = "http://localhost:8081";
+    //private static final String OBI_WAN_KENOBI_SERVICE_URL = "http://localhost:8081";
     private static final String TRAIN_APPRENTICES_URL = "/train-apprentices";
     private static final String FIND_APPRENTICES_URL = "/find-apprentices";
 
