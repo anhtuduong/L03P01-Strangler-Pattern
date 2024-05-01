@@ -28,11 +28,11 @@ public class User {
         this.password = password;
     }
 
-    public void addFollower(User user){
+    public void addFollower(User user) {
         followers.add(user);
     }
 
-    public void removeFollower(User user){
+    public void removeFollower(User user) {
         followers.remove(user);
     }
 }

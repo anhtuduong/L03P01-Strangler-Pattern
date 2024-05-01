@@ -7,6 +7,4 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/follow")
 public class FollowController {
 
-
-
 }

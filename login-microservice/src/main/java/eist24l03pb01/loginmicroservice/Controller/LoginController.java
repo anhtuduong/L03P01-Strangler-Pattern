@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/login")
 public class LoginController {
     @PostMapping("/performLogin")
-    public String authenticateUser(@RequestBody User user){
-        if("user".equals(user.getUserName()) && "passw".equals(user.getPassword())){
+    public String authenticateUser(@RequestBody User user) {
+        if ("user".equals(user.getUserName()) && "passw".equals(user.getPassword())) {
             return "Login was successful!";
         } else {
             return "Login unsuccessful! Invalid credentials.";
@@ -18,13 +18,13 @@ public class LoginController {
 
     //TODO: Move the functionalities to their respective Microservices.
     @PostMapping(value = "/send")
-    public String sendTweet(@RequestBody Tweet tweet){
+    public String sendTweet(@RequestBody Tweet tweet) {
         return "The tweet is sent";
     }
 
     @DeleteMapping("/delete")
-    public String deleteTweet(@RequestBody Tweet tweet){
-        return "The tweet: \n'''"+tweet.getBody()+"'''\nis deleted";
+    public String deleteTweet(@RequestBody Tweet tweet) {
+        return "The tweet: \n'''" + tweet.getBody() + "'''\nis deleted";
     }
 
     @PostMapping("/follow")
